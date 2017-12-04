@@ -57,7 +57,7 @@ export default class Presentation extends React.Component {
             width="200"
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           />
-
+          <Image height="400" src="https://i.imgur.com/K7LbtO2.gif" />
           <Text margin="10px 0 0" textColor="tertiary" bold>
             A{" "}
             <Link href="http://twitter.com/swyx" textColor="link">
@@ -75,6 +75,16 @@ export default class Presentation extends React.Component {
               here
             </Link>)
           </Text>
+        </Slide>
+        <Slide transition={["zoom", "spin"]} bgColor="primary">
+          <Heading size={1} caps fit textColor="secondary">
+            Beginner Friendly
+          </Heading>
+          <Image src="https://i.redd.it/ski09hcydmmz.jpg" />
+
+          <Heading size={1} caps fit textColor="secondary">
+            No Laptop Needed
+          </Heading>
         </Slide>
         <Slide
           transition={["spin", "zoom"]}
@@ -141,6 +151,14 @@ export default class Presentation extends React.Component {
             Claiming my issue
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33538472-81d31f12-d88f-11e7-9d70-2f0f5d08216e.png" />
+          <iframe
+            src="https://giphy.com/embed/iIONScVp5XctO"
+            width="320"
+            height="201"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          />
         </Slide>
         <Slide transition={["fade", "spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
@@ -163,6 +181,7 @@ export default class Presentation extends React.Component {
             by shawn wang (<a href="https://codepen.io/swyx">@swyx</a>) on{" "}
             <a href="https://codepen.io">CodePen</a>.
           </iframe>
+          <Text>(You can open the console here to see it)</Text>
         </Slide>
 
         <Slide transition={["spin", "slide"]} bgColor="secondary">
@@ -260,6 +279,20 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
+            Fixures are integration tests
+          </Heading>
+          <iframe
+            src="https://gfycat.com/ifr/HotOrangeCoypu"
+            frameBorder="0"
+            scrolling="no"
+            allowFullScreen
+            width="640"
+            height="640"
+          />
+        </Slide>
+
+        <Slide transition={["spin"]} bgColor="primary">
+          <Heading size={1} caps fit textColor="secondary">
             Fixures are awesome
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33541913-f3f34aea-d89e-11e7-9bd0-a4e9e4903891.png" />
@@ -272,6 +305,20 @@ export default class Presentation extends React.Component {
               here
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} caps fit textColor="secondary">
+            About 3 hours trial and error...
+          </Heading>
+          <iframe
+            src="https://giphy.com/embed/11pRX8ixgaittS"
+            width="640"
+            height="401"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          />
         </Slide>
 
         <Slide transition={["fade", "zoom"]} bgColor="secondary">
@@ -315,7 +362,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
-            First PR = #Fail
+            First PR = <span style={{ color: "red" }}>#Fail</span>
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33542508-53a9d7f4-d8a1-11e7-9735-65c8c30901a6.png" />
           <Text margin="10px 0 0" textColor="primary" bold fit>
@@ -375,19 +422,48 @@ export default class Presentation extends React.Component {
             <Quote>We'll need a test for this.</Quote>
             <Cite>Dan Abramov</Cite>
           </BlockQuote>
-          <div style={{ position: "relative", paddingBottom: "75%" }}>
-            <iframe
-              src="https://gfycat.com/ifr/OrnateGroundedAsiaticmouflon"
-              frameBorder="0"
-              scrolling="no"
-              width="75%"
-              height="75%"
-              style={{ position: "absolute", top: "0", left: "0" }}
-              allowFullScreen
-            />
-          </div>
+          <iframe
+            src="https://giphy.com/embed/3o6Mbbs879ozZ9Yic0"
+            width="640"
+            height="401"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          />
+        </Slide>
+        <Slide transition={["spin", "fade"]} bgColor="primary">
+          <Heading size={1} caps fit textColor="secondary">
+            Tests in React
+          </Heading>
+          <Image src="https://user-images.githubusercontent.com/6764957/33570380-aa300590-d8fa-11e7-9540-848f9e2fddb4.png" />
+          <Link href="https://reactjs.org/docs/codebase-overview.html">
+            <Text margin="10px 0 0" textColor="link" bold fit>
+              Codebase Overview {" "}
+            </Text>
+          </Link>
         </Slide>
 
+        <Slide
+          transition={["fade"]}
+          bgColor="secondary"
+          textColor="primary"
+          align="center center"
+        >
+          <BlockQuote>
+            <Quote>
+              Jest is my favorite… I will not use anything else for a long time.
+            </Quote>
+            <Cite>Kent C. Dodds, TC39 member</Cite>
+          </BlockQuote>
+          <iframe
+            src="https://giphy.com/embed/7MZ0v9KynmiSA"
+            width="640"
+            height="401"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          />
+        </Slide>
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             About 2 weeks of back and forth...
@@ -569,9 +645,16 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+          <Heading caps fit>
+            join the cool kids!
+          </Heading>
+          <Image height="400" src="https://i.imgur.com/K7LbtO2.gif" />
+        </Slide>
+
         <Slide transition={["spin", "slide"]} bgColor="black">
           <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-            Made with 💙 in NYC by
+            Made with 🔥in NYC by
           </Heading>
           <Link href="http://twitter.com/swyx">
             <Heading size={3} textColor="link">
@@ -582,20 +665,22 @@ export default class Presentation extends React.Component {
             (Happy to mentor)
           </Text>
           <p textColor="black">.</p>
-          <Text size={6}>
+          <Text size={6} textColor="white">
             Presentation Repo{" "}
             <Link
               href="https://github.com/sw-yx/react-contributing"
               textColor="link"
             >
               here
-            </Link>{" "}
+            </Link>
+            <br />
+            built with {" "}
             <Link
               href="http://formidable.com/open-source/spectacle/"
               textColor="link"
               size={6}
             >
-              built with Spectacle by Formidable
+              👓 by Formidable Labs
             </Link>
           </Text>
         </Slide>
