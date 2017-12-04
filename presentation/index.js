@@ -723,6 +723,11 @@ export default class Presentation extends React.Component {
           <Text size={5} caps textColor="goldenrod">
             (Happy to mentor)
           </Text>
+          <Link href="https://www.impostor-syndrome.org/">
+            <Heading size={3} textColor="link">
+              🎙️ Impostor Syndrome podcast 🎧
+            </Heading>
+          </Link>
           <p textColor="black">.</p>
           <Text size={6} textColor="white">
             Presentation Repo{" "}
