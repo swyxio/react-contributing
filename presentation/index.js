@@ -68,7 +68,10 @@ export default class Presentation extends React.Component {
 
           <Text size={6}>
             (Repo{" "}
-            <Link href="https://github.com/sw-yx/react-contributing">
+            <Link
+              href="https://github.com/sw-yx/react-contributing"
+              textColor="link"
+            >
               here
             </Link>)
           </Text>
@@ -124,7 +127,10 @@ export default class Presentation extends React.Component {
             Looking for "good first issue"
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33538336-bff6e8c4-d88e-11e7-8801-6dcd8f49b704.png" />
-          <Link href="https://github.com/facebook/react/issues?utf8=%E2%9C%93&q=label%3A%22good+first+issue%22+">
+          <Link
+            href="https://github.com/facebook/react/issues?utf8=%E2%9C%93&q=label%3A%22good+first+issue%22+"
+            textColor="link"
+          >
             <Text margin="10px 0 0" textColor="secondary" bold fit>
               https://github.com/facebook/react/issues?utf8=%E2%9C%93&q=label%3A%22good+first+issue%22+
             </Text>
@@ -168,7 +174,7 @@ export default class Presentation extends React.Component {
             src="https://user-images.githubusercontent.com/6764957/33540501-6fd5046a-d899-11e7-878d-e188086d0cdb.png"
           />
           <Link href="https://github.com/facebook/react/issues/10103">
-            <Text margin="10px 0 0" textColor="primary" bold fit>
+            <Text margin="10px 0 0" textColor="link" bold fit>
               https://github.com/facebook/react/issues/10103
             </Text>
           </Link>
@@ -274,7 +280,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33542099-9a335efe-d89f-11e7-9a05-bcacd6cf7316.png" />
           <Link href="https://github.com/facebook/react/pull/11149">
-            <Text margin="10px 0 0" textColor="primary" bold fit>
+            <Text margin="10px 0 0" textColor="link" bold fit>
               https://github.com/facebook/react/pull/11149
             </Text>
           </Link>
@@ -302,7 +308,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33542194-f415495a-d89f-11e7-82f5-e06f13360384.png" />
           <Link href="https://github.com/facebook/react/pull/11149/commits/b5398d1e3806b9d3f5be186c8daaff4308df18b8">
-            <Text margin="10px 0 0" textColor="primary" bold fit>
+            <Text margin="10px 0 0" textColor="link" bold fit>
               https://github.com/facebook/react/pull/11149/commits/b5398d1e3806b9d3f5be186c8daaff4308df18b8
             </Text>
           </Link>
@@ -332,7 +338,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33542794-7b37e17a-d8a2-11e7-8484-3c81342a8be6.png" />
           <Link href="https://github.com/facebook/react/pull/11168">
-            <Text margin="10px 0 0" textColor="secondary" bold fit>
+            <Text margin="10px 0 0" textColor="link" bold fit>
               https://github.com/facebook/react/pull/11168
             </Text>
           </Link>
@@ -576,14 +582,20 @@ export default class Presentation extends React.Component {
             (Happy to mentor)
           </Text>
           <p textColor="black">.</p>
-          <Text size={6} textColor="link">
+          <Text size={6}>
             Presentation Repo{" "}
-            <Link href="https://github.com/sw-yx/react-contributing">
+            <Link
+              href="https://github.com/sw-yx/react-contributing"
+              textColor="link"
+            >
               here
             </Link>{" "}
-            built with{" "}
-            <Link href="http://www.formidable.com">
-              Spectacle by Formidable Labs
+            <Link
+              href="http://formidable.com/open-source/spectacle/"
+              textColor="link"
+              size={6}
+            >
+              built with Spectacle by Formidable
             </Link>
           </Text>
         </Slide>
