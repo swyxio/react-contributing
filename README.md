@@ -1,6 +1,6 @@
 # this is a presentation on Contributing to React
 
-Notes on contributing to react. See the presentation live at <https://sw-yx.github.io/react-contributing/#/>
+Notes on contributing to react. See the presentation live at <https://sw-yx.github.io/react-contributing/#/> or with server sync at <http://react-contribute.surge.sh>
 
 add a `?presenter` to your route to see in presenter mode. keyboard shortcut `alt+O` or `P`, more docs [here](https://github.com/FormidableLabs/spectacle/blob/master/README.md#presenting)
 
