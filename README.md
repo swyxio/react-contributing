@@ -1,4 +1,8 @@
-# Spectacle Boilerplate
+# this is a presentation on Contributing to React
+
+notes on contributing to react.
+
+# This project is built on Spectacle Boilerplate. what follows is their readme.
 
 ## Contents
 
