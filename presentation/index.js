@@ -67,13 +67,12 @@ export default class Presentation extends React.Component {
           </Text>
 
           <Text size={6}>
-            (Repo{" "}
             <Link
               href="https://github.com/sw-yx/react-contributing"
               textColor="link"
             >
-              here
-            </Link>)
+              https://github.com/sw-yx/react-contributing
+            </Link>
           </Text>
         </Slide>
         <Slide transition={["zoom", "spin"]} bgColor="primary">
@@ -127,7 +126,7 @@ export default class Presentation extends React.Component {
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33538298-78238b74-d88e-11e7-9426-d73f41b9ad0e.png" />
           <Link href="https://reactjs.org/docs/how-to-contribute.html">
-            <Text margin="10px 0 0" textColor="primary" bold fit>
+            <Text margin="10px 0 0" textColor="link" bold fit>
               https://reactjs.org/docs/how-to-contribute.html
             </Text>
           </Link>
@@ -141,7 +140,7 @@ export default class Presentation extends React.Component {
             href="https://github.com/facebook/react/issues?utf8=%E2%9C%93&q=label%3A%22good+first+issue%22+"
             textColor="link"
           >
-            <Text margin="10px 0 0" textColor="secondary" bold fit>
+            <Text margin="10px 0 0" textColor="link" bold fit>
               https://github.com/facebook/react/issues?utf8=%E2%9C%93&q=label%3A%22good+first+issue%22+
             </Text>
           </Link>
