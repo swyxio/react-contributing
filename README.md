@@ -2,6 +2,8 @@
 
 notes on contributing to react.
 
+add a `?presenter` to your route to see in presenter mode. keyboard shortcut `alt+O` or `P`, more docs [here](https://github.com/FormidableLabs/spectacle/blob/master/README.md#presenting)
+
 # This project is built on Spectacle Boilerplate. what follows is their readme.
 
 ## Contents
