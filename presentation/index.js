@@ -13,6 +13,7 @@ import {
   Fill,
   Quote,
   Slide,
+  Magic,
   Text,
   Image,
   Appear,
@@ -47,7 +48,7 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom", "spin", "fade", "slide"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Contributing To React
           </Heading>
@@ -56,14 +57,24 @@ export default class Presentation extends React.Component {
             width="200"
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           />
-          <Link href="http://twitter.com/swyx">
-            <Text margin="10px 0 0" textColor="tertiary" bold>
-              A @swyx Story
-            </Text>
-          </Link>
+
+          <Text margin="10px 0 0" textColor="tertiary" bold>
+            A{" "}
+            <Link href="http://twitter.com/swyx" textColor="link">
+              @swyx
+            </Link>{" "}
+            Story
+          </Text>
+
+          <Text size={6}>
+            (Repo{" "}
+            <Link href="https://github.com/sw-yx/react-contributing">
+              here
+            </Link>)
+          </Text>
         </Slide>
         <Slide
-          transition={["slide"]}
+          transition={["spin", "zoom"]}
           bgImage="https://user-images.githubusercontent.com/6764957/33537968-c158ee26-d88c-11e7-8419-3cf83fa951cd.png"
         >
           <Appear fid="1">
@@ -78,7 +89,7 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         <Slide
-          transition={["slide"]}
+          transition={["spin", "zoom"]}
           bgImage="https://user-images.githubusercontent.com/6764957/33538080-4a997b7e-d88d-11e7-867a-1d7d3e548c6b.png"
           bgDarken={0.75}
         >
@@ -86,7 +97,7 @@ export default class Presentation extends React.Component {
             <Image src="https://user-images.githubusercontent.com/6764957/33534959-b18fd16c-d878-11e7-8219-e7059bd93a53.png" />
           </Appear>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade", "slide"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             First PR instructions
           </Heading>
@@ -97,7 +108,7 @@ export default class Presentation extends React.Component {
             </Text>
           </Link>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["slide", "spin"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             Read the Docs
           </Heading>
@@ -108,7 +119,7 @@ export default class Presentation extends React.Component {
             </Text>
           </Link>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom", "spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Looking for "good first issue"
           </Heading>
@@ -119,13 +130,13 @@ export default class Presentation extends React.Component {
             </Text>
           </Link>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["slide", "fade"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             Claiming my issue
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33538472-81d31f12-d88f-11e7-9d70-2f0f5d08216e.png" />
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade", "spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             The Issue
           </Heading>
@@ -148,7 +159,7 @@ export default class Presentation extends React.Component {
           </iframe>
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["spin", "slide"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             They even tell you where!
           </Heading>
@@ -163,7 +174,7 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom", "slide"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             But it doesn't exist!
           </Heading>
@@ -173,7 +184,7 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide
-          transition={["slide"]}
+          transition={["slide", "zoom"]}
           bgImage="https://user-images.githubusercontent.com/6764957/33540823-b48642a8-d89a-11e7-9e6a-56ac7e272baa.png"
           bgDarken={0.75}
         >
@@ -193,7 +204,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide
-          transition={["fade"]}
+          transition={["fade", "slide"]}
           textColor="white"
           bgImage="https://user-images.githubusercontent.com/6764957/33541344-d5e0d8bc-d89c-11e7-8535-5a17eec553bf.png"
           bgDarken={0.75}
@@ -241,7 +252,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Fixures are awesome
           </Heading>
@@ -257,7 +268,7 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["fade", "zoom"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             First PR = Perfection?
           </Heading>
@@ -269,14 +280,14 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["fade", "spin"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             Perfection!!!
           </Heading>
           <Image src="http://i0.kym-cdn.com/photos/images/original/001/058/582/779.gif" />
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["slide", "fade"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             First PR = Rookie Mistakes
           </Heading>
@@ -285,7 +296,7 @@ export default class Presentation extends React.Component {
             What is going on here?
           </Text>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["spin", "zoom"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             First PR = Changing all the dependencies!
           </Heading>
@@ -296,7 +307,7 @@ export default class Presentation extends React.Component {
             </Text>
           </Link>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="secondary">
+        <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} caps fit textColor="primary">
             First PR = #Fail
           </Heading>
@@ -306,13 +317,16 @@ export default class Presentation extends React.Component {
           </Text>
           <Text margin="10px 0 0" textColor="primary" bold fit>
             (Now I know you can take{" "}
-            <Link href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github">
+            <Link
+              href="https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github"
+              textColor="link"
+            >
               Kent Dodds' Open Source Git course
             </Link>)
           </Text>
         </Slide>
 
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["spin", "fade"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Second PR = Perfection?
           </Heading>
@@ -323,7 +337,7 @@ export default class Presentation extends React.Component {
             </Text>
           </Link>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade", "zoom"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Second PR = 💩
           </Heading>
@@ -332,7 +346,7 @@ export default class Presentation extends React.Component {
             Protip: Don't lie to your maintainer if you want your PR accepted
           </Text>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Line by Line Code Review
           </Heading>
@@ -345,7 +359,12 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide
+          transition={["fade"]}
+          bgColor="secondary"
+          textColor="primary"
+          align="center center"
+        >
           <BlockQuote>
             <Quote>We'll need a test for this.</Quote>
             <Cite>Dan Abramov</Cite>
@@ -377,7 +396,7 @@ export default class Presentation extends React.Component {
           />
         </Slide>
         <Slide
-          transition={["zoom"]}
+          transition={["slide", "fade"]}
           bgColor="secondary"
           bgImage="https://user-images.githubusercontent.com/6764957/33543550-73cca0a8-d8a5-11e7-960c-f7a4267b533e.png"
           bgDarken={0.75}
@@ -396,7 +415,7 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
         <Slide
-          transition={["zoom"]}
+          transition={["spin", "zoom"]}
           bgColor="secondary"
           bgImage="https://user-images.githubusercontent.com/6764957/33543550-73cca0a8-d8a5-11e7-960c-f7a4267b533e.png"
           bgDarken={0.75}
@@ -411,7 +430,7 @@ export default class Presentation extends React.Component {
             </Text>
           </Link>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["fade", "slide"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Most Importantly...
           </Heading>
@@ -556,11 +575,17 @@ export default class Presentation extends React.Component {
           <Text size={5} caps textColor="goldenrod">
             (Happy to mentor)
           </Text>
-          <Link href="https://github.com/sw-yx/react-contributing">
-            <Heading size={3} textColor="link">
-              Presentation: https://sw-yx.github.io/react-contributing/
-            </Heading>
-          </Link>
+          <p textColor="black">.</p>
+          <Text size={6} textColor="link">
+            Presentation Repo{" "}
+            <Link href="https://github.com/sw-yx/react-contributing">
+              here
+            </Link>{" "}
+            built with{" "}
+            <Link href="http://www.formidable.com">
+              Spectacle by Formidable Labs
+            </Link>
+          </Text>
         </Slide>
       </Deck>
     );
