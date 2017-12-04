@@ -57,7 +57,7 @@ export default class Presentation extends React.Component {
             width="200"
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
           />
-          <Image height="400" src="https://i.imgur.com/K7LbtO2.gif" />
+          <Image src="https://i.imgur.com/K7LbtO2.gif" />
           <Text margin="10px 0 0" textColor="tertiary" bold>
             A{" "}
             <Link href="http://twitter.com/swyx" textColor="link">
@@ -312,7 +312,7 @@ export default class Presentation extends React.Component {
             About 3 hours trial and error...
           </Heading>
           <iframe
-            src="https://giphy.com/embed/11pRX8ixgaittS"
+            src="https://giphy.com/embed/l2R04wcEprpUFvrC8"
             width="640"
             height="401"
             frameBorder="0"
@@ -379,6 +379,37 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading caps fit bgColor="secondary" textColor="red">
+            #Fail
+          </Heading>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "50% 50%",
+              gridTemplateRows: "50% 50%"
+            }}
+          >
+            <Text>What I think I'm doing</Text>
+            <Text>What I'm actually doing</Text>
+            <iframe
+              src="https://giphy.com/embed/FVQFOSQo4xYEE"
+              frameBorder="0"
+              className="giphy-embed"
+              allowFullScreen
+              height="300"
+            />
+            <iframe
+              src="https://giphy.com/embed/pjs01sIvL023K"
+              frameBorder="0"
+              className="giphy-embed"
+              allowFullScreen
+              height="300"
+            />
+          </div>
+        </Slide>
+
         <Slide transition={["spin", "fade"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Second PR = Perfection?
@@ -399,6 +430,21 @@ export default class Presentation extends React.Component {
             Protip: Don't lie to your maintainer if you want your PR accepted
           </Text>
         </Slide>
+
+        <Slide transition={["zoom"]} bgColor="primary">
+          <Heading size={1} caps fit textColor="secondary">
+            About 3 days trial and error...
+          </Heading>
+          <iframe
+            src="https://giphy.com/embed/sSmxfWnEVxtWU"
+            width="640"
+            height="401"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          />
+        </Slide>
+
         <Slide transition={["spin"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
             Line by Line Code Review
@@ -503,7 +549,7 @@ export default class Presentation extends React.Component {
           bgDarken={0.75}
         >
           <Heading size={1} caps fit textColor="primary">
-            MERGED!!1!!
+            MERGED!!
           </Heading>
           <Image src="https://user-images.githubusercontent.com/6764957/33543790-5840ea82-d8a6-11e7-8188-63dcbf9a76f2.png" />
           <Link href="https://github.com/facebook/react/releases/tag/v16.1.0">
@@ -511,6 +557,20 @@ export default class Presentation extends React.Component {
               https://github.com/facebook/react/releases/tag/v16.1.0
             </Text>
           </Link>
+        </Slide>
+        <Slide transition={["spin", "zoom"]} bgColor="secondary">
+          <Heading size={1} caps fit textColor="red">
+            MERGED!!1!!
+          </Heading>
+
+          <iframe
+            src="https://giphy.com/embed/cFkiFMDg3iFoI"
+            width="640"
+            height="400"
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          />
         </Slide>
         <Slide transition={["fade", "slide"]} bgColor="primary">
           <Heading size={1} caps fit textColor="secondary">
