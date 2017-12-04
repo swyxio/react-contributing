@@ -556,6 +556,11 @@ export default class Presentation extends React.Component {
           <Text size={5} caps textColor="goldenrod">
             (Happy to mentor)
           </Text>
+          <Link href="https://github.com/sw-yx/react-contributing">
+            <Heading size={3} textColor="link">
+              Presentation: https://sw-yx.github.io/react-contributing/
+            </Heading>
+          </Link>
         </Slide>
       </Deck>
     );
